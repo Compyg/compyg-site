@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Compyg</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="index.html"><img src="https://static.wixstatic.com/media/779230_fb5fd4c34a2f467f9e9f4702137cb8c5~mv2.png" alt="Compyg logo">Compyg</a>
+    <button class="navtoggle" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+    <ul class="navlinks">
+      <li><a href="about.html">About</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding:80px 0 70px">
+  <div class="wrap">
+    <div class="eyebrow">Contact Ground Control</div>
+    <h1 style="font-size:clamp(34px,5vw,54px)">Let's mind-fly <em>together.</em></h1>
+    <p class="lead">Ready for takeoff? Whether you're looking for a partner to bring your startup idea to life, guidance to navigate your growth journey, or an experienced team to power your development needs, we're here to help.</p>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="kicker">Drop us a message</div>
+      <h2>We read every note</h2>
+      <p style="color:var(--muted)">Email us directly, or use the form — we typically reply within a business day.</p>
+      <p style="margin-top:24px;font-size:15px"><strong>Email</strong><br><a href="mailto:hello@compyg.com">hello@compyg.com</a></p>
+    </div>
+    <form class="cform" onsubmit="event.preventDefault(); this.reset(); document.getElementById('thanks').style.display='block';">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <input type="text" name="company" placeholder="Company / project (optional)">
+      <textarea name="message" placeholder="Tell us about your idea..." required></textarea>
+      <button type="submit">Submit</button>
+      <p class="formnote" id="thanks" style="display:none;color:var(--sky);font-weight:600">Great, we'll talk soon!</p>
+    </form>
+  </div>
+</section>
+
+<footer>All rights reserved to Compyg Ltd © 2012–2025</footer>
+</body>
+</html>
